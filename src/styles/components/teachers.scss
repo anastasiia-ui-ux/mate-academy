@@ -1,0 +1,49 @@
+.teachers{
+
+  &_img{
+    margin-bottom: 30px;
+  }
+
+  &_row{
+    justify-content: space-between;
+    margin-right: -5%;
+    margin-left: -5%;
+    position: relative;
+
+    &::before{
+
+      @media screen and (max-width: 480px){
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent 75%,#fff 90%);
+      }
+
+    }
+
+    &.show{
+      .dropdown_companies{
+        transform: translateX(-50%) rotate(180deg);
+        bottom: -20px;
+      }
+    }
+
+    @media screen and (max-width: 480px){
+      justify-content: center;
+    }
+
+  }
+
+  &_item{
+    max-width: 250px;
+
+    @media screen and (max-width: 1200px){
+      max-width: 200px;
+    }
+
+  }
+
+}

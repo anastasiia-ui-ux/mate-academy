@@ -1,0 +1,148 @@
+a.dropdown_companies{
+  &:hover{
+    color: #fff;
+  }
+}
+
+.dropdown{
+
+  &-toggle{
+    &::after{
+      content: "\F078";
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      font-weight: 900;
+      font-family: $fontAwesome;
+      border: 0;
+      display: inline-block;
+      vertical-align: middle;
+
+      @media screen and (max-width: 992px){
+        float: right;
+      }
+
+    }
+  }
+
+  &-menu{
+    border-radius: 0;
+
+    &.show{
+
+      @media screen and (max-width: 992px){
+        float: none;
+        position: static!important;
+        transform: none!important;
+        margin-top: 20px;
+        border: 0;
+        background-color: $themeBg_light;
+      }
+
+    }
+
+    &_companies{
+      width: 100%;
+
+      &.show{
+        display: none;
+
+        @media screen and (max-width: 992px){
+          position: relative!important;
+          z-index: 1;
+        }
+
+        @media screen and (max-width: 480px){
+          background-color: #fff;
+          padding: 0;
+          margin: 0;
+          display: block;
+        }
+
+      }
+
+      &__row{
+        align-items: center;
+        display: none;
+
+        @media screen and (max-width: 480px){
+          display: flex;
+        }
+
+      }
+
+    }
+
+    &_teachers{
+
+      &__row{
+        justify-content: center;
+      }
+
+    }
+
+    &_prise{
+
+      &.show{
+
+        @media screen and (max-width: 992px){
+          float: left;
+          position: absolute!important;
+          margin-top: 20px;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid rgba(0,0,0,.15);
+          left: auto!important;
+          right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-item:focus,
+  &-item:hover{
+
+    @media screen and (max-width: 992px){
+      background-color: transparent;
+    }
+
+  }
+
+  &_companies{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0);
+    z-index: 2;
+    top: auto;
+    margin: 0;
+    font-size: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    justify-content: center;
+    display: none;
+
+    @media screen and (max-width: 480px){
+      display: flex;
+    }
+
+    &::after{
+      margin: 0;
+      top: 10px;
+      line-height: .5;
+      position: static;
+      transform: none;
+    }
+
+    &::before{
+      line-height: .5;
+    }
+
+  }
+
+}

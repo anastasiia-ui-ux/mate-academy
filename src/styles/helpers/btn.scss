@@ -1,0 +1,66 @@
+.btn{
+  padding: 15px;
+  min-width: 250px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 50px;
+  display: inline-block;
+  border-radius: 0;
+
+  &_red{
+    background-color: $theme_color;
+    color: #fff;
+
+    &:hover{
+      color: #fff;
+    }
+
+  }
+
+  &_border{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover{
+      color: #fff;
+    }
+
+  }
+
+  &-link{
+    margin-top: 0;
+    text-align: left;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+
+    &:focus,
+    &:hover{
+      text-decoration: none;
+      color: #000;
+    }
+
+  }
+
+  &__banner{
+
+    @media screen and (max-width: 480px){
+      margin: auto 0 20%;
+    }
+  
+    @media screen and (max-height: 500px){
+      margin-top: 5vh;
+    }
+
+    @media screen and (max-height: 400px){
+      margin-bottom: 15vh;
+    }
+
+  }
+
+  @media screen and (max-width: 400px){
+    width: 100%;
+  }
+
+}

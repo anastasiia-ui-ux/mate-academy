@@ -1,0 +1,24 @@
+@import "~bootstrap-4-grid/scss/grid/bootstrap-grid";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~swiper/dist/css/swiper.min.css";
+
+@import "__modules__/fonts/_fonts.scss";
+@import "__modules__/_var.scss";
+@import "__modules__/mixins/_mixins";
+
+@import "./helpers/body";
+@import "./helpers/svg";
+@import "./helpers/list";
+@import "./helpers/link";
+@import "./helpers/grid_custom";
+@import "./helpers/btn";
+@import "./helpers/main";
+@import "./helpers/text";
+@import "./helpers/title";
+@import "./helpers/background";
+@import "./helpers/input";
+@import "./helpers/html";
+@import "./helpers/img";
+
+@import "pages/_pages.scss";
+@import "helpers/helpers";

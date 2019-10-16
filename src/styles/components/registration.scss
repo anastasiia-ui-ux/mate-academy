@@ -1,0 +1,73 @@
+.registration{
+  background-image: url("./../images/Group_18.png");
+  min-height: 870px;
+  padding-top: 330px;
+  padding-bottom: 100px;
+  margin-bottom: -1px;
+  margin-top: 30px;
+
+  &__title{
+    background-color: $title_bg_blue;
+  }
+
+  &__row{
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__col{
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 28%;
+    margin-right: 8%;
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 1199px){
+      flex-basis: 46%;
+      max-width: 46%;
+      &:nth-child(3n+3){
+        margin-right: 8%;
+      }
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+      &:last-child{
+        .input_group{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px){
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 0;
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    }
+
+    &_12{
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
+
+  &_form_row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 480px){
+    order: 1;
+  }
+
+}

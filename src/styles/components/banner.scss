@@ -1,0 +1,176 @@
+.banner{
+
+  &_home{
+    background-image: url("./../images/banner_home.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      flex-direction: column;
+      min-height: 760px;
+
+      @media screen and (max-width: 1366px){
+        min-height: 550px;
+      }
+
+      @media screen and (max-width: 1024px){
+        min-height: 400px;
+      }
+  
+      @media screen and (max-width: 768px){
+        min-height: 100%;
+      }
+  
+      @media screen and (max-height: 400px){
+        min-height: 100%;
+      }
+
+    }
+  
+    @media screen and (max-width: 992px){
+      background-image: url("./../images/tablet_banner_3.png");
+      background-size: cover;
+      background-position: 0 0;
+    }
+
+    @media screen and (max-width: 576px){
+    }
+  
+    @media screen and (max-width: 480px){
+      background-image: url("./../images/banner_mobile_2.png");
+      height: calc(100vh - 75px);
+    }
+
+  }
+
+  &_title{
+    font-family: $font-roboto;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    @include fluidFontSize(16px, 75px, 320px, 1700px, 16px);
+
+    &_wrap{
+      max-width: 1130px;
+
+      @media screen and (max-width: 480px){
+        margin-top: 40vh;
+      }
+  
+      @media screen and (max-height: 400px){
+        margin-top: 10vh;
+      }
+
+      &--course{
+
+        @media screen and (max-width: 480px){
+          margin-top: 30vh;
+        }
+
+      }
+
+      &--about{
+
+        @media screen and (max-width: 480px){
+          margin-top: 20vh;
+        }
+
+      }
+
+    }
+
+  }
+
+  &_course{
+    background-image: url("./../images/banner_course.png");
+
+    &__subtitle{
+      font-family: $font-roboto;
+    }
+
+    &__text{
+      font-family: $font-roboto;
+      margin-top: 30px;
+      background-color: #fff;
+
+      @media screen and (max-width: 992px){
+        font-size: 16px;
+      }
+
+      &_hidden{
+
+        @media screen and (max-height: 576px){
+          display: none;
+        }
+
+      }
+
+      &_more{
+        display: none;
+
+        &_text{
+          color: $theme_color;
+          font-weight: 600;
+        }
+
+        @media screen and (max-height: 576px){
+          display: inline-block;
+        }
+
+      }
+
+    }
+
+  }
+
+  &_about{
+    background-image: url("./../images/banner_about_us.png");
+  }
+
+  &_prise{
+    text-align: center;
+    margin-top: 30px;
+
+    &__text{
+      font-size: 40px;
+      font-family: $font-roboto;
+      margin-bottom: 45px;
+
+      @media screen and (max-width: 992px){
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 550px){
+        font-size: 18px;
+      }
+
+    }
+
+    &__salary{
+      float: left;
+    }
+
+    &__course{
+      float: right;
+      position: relative;
+    }
+
+    &__chart{
+      margin-top: 5%;
+    }
+
+  }
+
+  &_faq{
+    background-image: url("./../images/banner_faq.png");
+  }
+
+}

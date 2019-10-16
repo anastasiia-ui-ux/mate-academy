@@ -1,0 +1,66 @@
+.input{
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  border: none;
+  background-color: transparent;
+
+  &_wrap{
+    height: $inputHeight;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  &_group{
+    position: relative;
+    margin-bottom: 90px;
+    max-width: 390px;
+
+    @media screen and (max-width: 1199px){
+      max-width: unset;
+    }
+
+  }
+
+  &_label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &_label{
+    &_registration{
+      will-change: top, font-size;
+      transition: .3s;
+      line-height: 1;
+    }
+  }
+
+  &_registration{
+    padding-left: 0;
+    color: #fff;
+
+    &:valid{
+
+      & ~ .input_label_registration{
+        top: 0;
+        transform: none;
+        font-size: 10px;
+      }
+
+    }
+
+    &:focus{
+      & ~ .input_label_registration{
+        top: 0;
+        transform: none;
+        font-size: 10px;
+        line-height: 1;
+      }
+    }
+  }
+
+}

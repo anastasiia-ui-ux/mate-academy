@@ -1,0 +1,87 @@
+$font-reg: 'Montserrat';
+$font-med: 'RobotoMedium';
+$font-roboto: 'Roboto Condensed', sans-serif;
+$fontAwesome: Font Awesome\ 5 Free;
+$defaultFontSize: 16;
+
+//breakpoints
+$xxl: "1200";
+$xl: "1024";
+$lg: "992";
+$md: "768";
+$sm: "576";
+$xs: "480";
+
+
+$themeText: #1D1D1B;
+$themeTextSecondary: #7b7b7b;
+$themeColor: #004479;
+$themeColor_light: #30a9de;
+$themeColor_dark: #003158;
+$themeBg: #fff;
+$themeBg_light: #F2F2F2;
+$themeBorder: #c2c5cb;
+$themeBorder_secondary: rgba(255, 255, 255, 0.3);
+$themeDecor: #dad9d9;
+$themeShadow: rgba(0, 0, 0, 0.4);
+
+$submenuColor: #003158;
+$submenu_text: #fff;
+$submenu_hover: #FFCB08;
+
+$breadcrumbColor: #1791D2;
+
+$modalBg: unquote('#0000004d');
+
+$error: #E12121;
+$selection: #008FD5;
+$mainBorderRadius: '5px';
+$showSubmenuActive: $submenuColor;
+$inputHeight: 50px;
+$inputBg: #fff;
+
+$btnPrimaryBg: #ffe449;
+$btnPrimaryHoverBg: #ffce00;
+$btnPrimaryFocusBorder: #0086c2;
+$btnPrimaryError: #c2c6cc;
+$btnPrimaryErrorText: #6b737d;
+$buttonColor: #1D1D1B;
+
+$btn_action_hover: #c8d2e0;
+
+$contentFontSize: 18;
+$contentListDotSize: 6;
+
+$selectBorder: #F5F7FA;
+$selectIconColor: #000;
+
+$linkColor: #2D5CA6;
+
+$mainLogoBlue: #2669e3;
+$mainLogoYellow: #ffe358;
+
+$logo_main: #f1cf69;
+
+$form_search_acts_bg: #F2F2F2;
+
+$menuLong_itemsHover: $submenu_hover;
+$menu__link_line_height: 20;
+
+$loadMore: #607485;
+
+$tagBg: rgba(255, 255, 255, 0.68);
+$tag_border: rgba(20, 102, 167, 0.44);
+
+$timelineBg: #F5F7FA;
+
+$slider_content__arrow_size: 50px;
+
+
+
+
+$theme_color: #E75451;
+$theme_color_secondary: #0341F6;
+$title_bg_blue: #030F82;
+$theme_color_light: #CFC9C9;
+$theme_border_dark: rgba(0,0,0,0.25);
+$theme_color_dark: #030265;

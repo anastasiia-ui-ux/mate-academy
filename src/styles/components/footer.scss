@@ -1,0 +1,61 @@
+.footer{
+  padding: 80px 0;
+  background-color: $theme_color;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  &__social{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &_menu{
+    &_link{
+      margin-bottom: 15px;
+      display: block;
+    }
+  }
+
+  &_copyright{
+    margin-top: 30px;
+    color: $themeText;
+  }
+
+  &_bottom{
+    text-align: right;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &::after{
+    content: '';
+    height: 100%;
+    width: 200%;
+    background-color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translateX(-50%) rotate(-10deg);
+
+    @media screen and (max-width: 575px){
+      top: 80%;
+      left: 30%;
+    }
+
+  }
+
+  &_top{
+    &__col{
+
+      @media screen and (max-width: 575px){
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+    }
+  }
+
+}

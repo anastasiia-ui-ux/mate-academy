@@ -1,0 +1,71 @@
+.benefit{
+  position: relative;
+  z-index: 1;
+
+  &::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    top: -10px;
+    left: -10px;
+    z-index: 2;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    min-height: 75px;
+    position: relative;
+    z-index: 3;
+    @include fluidFontSize(16px, 25px, 320px, 1700px, 14px);
+
+    @media screen and (max-width: 768px){
+      min-height: unset;
+    }
+
+  }
+
+  &_svg{
+    position: absolute;
+    top: -85px;
+    left: -67px;
+    z-index: 1;
+
+    &_online{
+      top: -70px;
+      left: -30px;
+
+      @media screen and (max-width: 1700px){
+        top: -85px;
+      }
+
+    }
+
+    &_guarantee{
+      height: 87px;
+      width: 87px;
+
+      @media screen and (max-width: 1700px){
+        height: 75px;
+        width: 75px;
+      }
+    }
+
+    @media screen and (max-width: 1700px){
+      left: 0;
+    }
+
+  }
+
+  &__text{
+    position: relative;
+    z-index: 5;
+  }
+
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}

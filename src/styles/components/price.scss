@@ -1,0 +1,44 @@
+.price{
+
+  &_include{
+
+    &_section{
+      margin-top: 30px;
+    }
+
+    &_row{
+      justify-content: center;
+    }
+
+    &_number{
+      height: 200px;
+      width: 200px;
+      border-image-source: url("./../images/dots.svg");
+      border-image-slice: 33% 33%;
+      border-image-repeat: round;
+      border-style: dotted;
+      border-color: $theme_color_secondary;
+      border-width: 5px;
+      color: $theme_color_secondary;
+      font-size: 100px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      margin-right: 40px;
+
+      @media screen and (max-width: 576px){
+        margin-bottom: 30px;
+        float: none;
+      }
+
+    }
+
+    &_clearfix{
+      margin-bottom: 40px;
+    }
+
+  }
+
+}

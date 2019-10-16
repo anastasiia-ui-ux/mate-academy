@@ -1,0 +1,41 @@
+.title{
+  font-weight: 700;
+  line-height: normal;
+
+  &_h1{
+    font-size: 87px;
+
+    @media screen and (max-width: 1300px){
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 992px){
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: 550px){
+      font-size: 20px;
+    }
+
+  }
+
+  &_h2{
+    font-size: 30px;
+  }
+
+  &_h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 576px){
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &_h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+}

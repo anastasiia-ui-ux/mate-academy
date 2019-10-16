@@ -1,0 +1,57 @@
+.accordion{
+
+  &_card{
+    border: 2px dashed $theme_color_light;
+    border-radius: 0;
+    margin-bottom: 50px;
+  }
+
+  &_header,
+  &_body {
+    padding: 30px;
+  }
+
+  &_body {
+    padding-top: 10px;
+  }
+
+  &_header{
+    background-color: #fff;
+    border-bottom: 0;
+
+    &__btn{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &.collapsed{
+        .accordion_btn{
+          transform: rotate(0);
+        }
+      }
+
+    }
+
+  }
+
+  & > .card:first-of-type,
+  & > .card:not(:first-of-type):not(:last-of-type){
+    border-bottom: 2px dashed $theme_color_light;
+  }
+
+  &_btn{
+    transform: rotate(180deg);
+    transition: transform .3s;
+    will-change: transform;
+    margin: 0 15px;
+  }
+
+  &_row{
+    justify-content: center;
+  }
+
+  &_section{
+    margin-top: 30px;
+  }
+
+}

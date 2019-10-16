@@ -1,0 +1,19 @@
+.hamburger-menu{
+  display: inline-block;
+
+  @media screen and (max-width: 992px){
+    position: fixed;
+    top: 30px;
+    left: 15px;
+    z-index: 21;
+  }
+
+  &__btn{
+    display: none;
+
+    @media screen and (max-width: 992px){
+      display: block;
+    }
+  }
+
+}

@@ -1,0 +1,27 @@
+.fact{
+  max-width: 385px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &__title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 768px){
+      font-size: 40px;
+    }
+
+  }
+
+  &__text{
+    font-size: 18px;
+    font-weight: 600;
+
+    @media screen and (max-width: 768px){
+      font-size: 13px;
+    }
+
+  }
+
+}

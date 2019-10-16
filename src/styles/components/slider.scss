@@ -1,0 +1,102 @@
+.slider{
+
+  &__image{
+    height: 100px;
+    width: 100px;
+    flex: 0 0 100px;
+    max-width: 100px;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &_review{
+    max-width: 85%;
+    margin: 0;
+
+    &_btn{
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      font-weight: 900;
+      font-family: $fontAwesome;
+      font-size: 35px;
+      height: 55px;
+      width: 50px;
+      background-image: none;
+      transform: rotate(90deg);
+      top: 0;
+      margin: 0;
+
+      &::before{
+        content: "\F078";
+      }
+
+      &::after{
+        content: "\F078";
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &_next{
+        transform: rotate(-90deg);
+        right: 0;
+      }
+
+      &_prev{
+        left: auto;
+        right: 85px;
+      }
+
+    }
+
+    &__card{
+      display: flex;
+      margin: 0 -30px;
+
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+      }
+
+    }
+
+    &__col{
+      padding: 0 30px;
+    }
+
+    &__footer{
+      padding-top: 50px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      background-image: linear-gradient(to right, $themeBorder 10%, rgba(255, 255, 255, 0) 0%);
+      background-position: top;
+      background-size: 26px 3px;
+      background-repeat: repeat-x;
+    }
+
+    &_box{
+      position: relative;
+    }
+
+    &__name{
+      margin-bottom: 5px;
+    }
+
+    &__next{
+      color: $theme_color;
+      font-weight: 600;
+    }
+
+  }
+
+}

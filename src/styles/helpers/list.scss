@@ -1,0 +1,30 @@
+.list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item{
+    margin-bottom: 30px;
+  }
+
+  &_bullet{
+
+    &__item{
+      position: relative;
+      padding-left: 25px;
+
+      &::before{
+        content: '';
+        height: 1px;
+        width: 15px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: 9px;
+      }
+
+    }
+
+  }
+
+}

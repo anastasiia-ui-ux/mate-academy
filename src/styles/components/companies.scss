@@ -7,18 +7,22 @@
     margin-right: -5%;
     position: relative;
 
-    &::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent 75% , #fff 90%);
-      display: none;
+    &.more{
 
-      @media screen and (max-width: 480px){
-        display: block;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(rgba(255,255,255, 0) 75% , #fff 90%);
+        display: none;
+
+        @media screen and (max-width: 480px){
+          display: block;
+        }
+
       }
 
     }

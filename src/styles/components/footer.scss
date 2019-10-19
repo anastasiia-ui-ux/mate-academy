@@ -9,6 +9,7 @@
   &__social{
     display: block;
     margin-bottom: 20px;
+    line-height: 150%;
   }
 
   &_menu{
@@ -41,21 +42,34 @@
     transform: translateX(-50%) rotate(-10deg);
 
     @media screen and (max-width: 575px){
-      top: 80%;
+      top: 70%;
       left: 30%;
     }
 
   }
 
   &_top{
+
     &__col{
 
       @media screen and (max-width: 575px){
         padding-top: 10px;
         padding-bottom: 10px;
+        max-width: unset;
+        flex-basis: auto;
+        width: auto;
       }
 
     }
+
+    &__row{
+
+      @media screen and (max-width: 575px){
+        justify-content: space-between;
+      }
+
+    }
+
   }
 
 }

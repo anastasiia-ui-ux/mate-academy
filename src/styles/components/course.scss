@@ -4,6 +4,8 @@
   font-size: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: block;
+  color: inherit;
 
   &__title{
     font-weight: 700;
@@ -122,10 +124,13 @@
     @include fluidFontSize(14px, 20px, 768px, 1700px, 14px);
     margin-bottom: 15px;
     display: flex;
-    justify-content: space-between;
 
     &:last-child{
       margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 576px){
+      justify-content: space-between;
     }
 
   }
@@ -146,6 +151,7 @@
 
   &_accent{
     white-space: nowrap;
+    margin-left: 10px;
   }
 
 }

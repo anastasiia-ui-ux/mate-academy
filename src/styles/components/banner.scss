@@ -132,7 +132,7 @@
   }
 
   &_about{
-    background-image: url("./../images/banner_about_us.png");
+    background-image: url("./../images/banner_about.png");
   }
 
   &_prise{
@@ -143,6 +143,7 @@
       font-size: 40px;
       font-family: $font-roboto;
       margin-bottom: 45px;
+      margin-top: 10px;
 
       @media screen and (max-width: 992px){
         font-size: 30px;

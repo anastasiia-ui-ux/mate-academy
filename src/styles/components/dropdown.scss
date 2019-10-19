@@ -126,6 +126,7 @@ a.dropdown_companies{
     color: #fff;
     justify-content: center;
     display: none;
+    height: 50px;
 
     @media screen and (max-width: 480px){
       display: flex;

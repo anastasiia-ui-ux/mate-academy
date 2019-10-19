@@ -10,16 +10,20 @@
     margin-left: -5%;
     position: relative;
 
-    &::before{
+    &.more{
 
-      @media screen and (max-width: 480px){
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent 75%,#fff 90%);
+      &::before{
+
+        @media screen and (max-width: 480px){
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(transparent 75%,#fff 90%);
+        }
+
       }
 
     }

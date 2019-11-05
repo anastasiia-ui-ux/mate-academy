@@ -7,7 +7,7 @@
   justify-content: center;
   margin-top: 30px;
 
-  &__title{
+  &__title_{
     font-family: $font-roboto;
     @include fluidFontSize(22px, 75px, 320px, 1700px, 22px);
     margin-bottom: 50px;

@@ -27,7 +27,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "0.11.2",
     "group-css-media-queries-loader": "^3.0.2",
-    "node-sass": "^4.8.3",
+    "node-sass": "^7.0.0",
     "nodelist-foreach-polyfill": "^1.2.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
